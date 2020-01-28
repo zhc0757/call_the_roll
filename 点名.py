@@ -62,7 +62,7 @@ for s in subjects:
         classmateCheck.remove(strArray[1])
 #显示结果
 listClassmateCheck=list(classmateCheck)
-print('\n以下同学未报数：')
+print('\n以下%d名同学未报数：'%len(listClassmateCheck))
 for classmate in listClassmateCheck:
     print(classmate)
 print()
