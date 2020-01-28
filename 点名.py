@@ -15,7 +15,7 @@ from imapclient import IMAPClient
 import email
 
 #读取本班同学信息
-classmateExcelData=pandas.read_excel('卓越班通讯录.xlsx')
+classmateExcelData=pandas.read_excel(configs.roster)
 classmates=classmateExcelData.get('姓名').tolist()
 #放到字典中（在为假，不在为真）
 classmateCheck=set(classmates)
