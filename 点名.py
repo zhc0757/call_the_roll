@@ -58,7 +58,7 @@ print('已读取邮件，正在解析……')
 #解析邮件标题
 for s in subjects:
     strArray=s.split(maxsplit=1)
-    if len(strArray)>1 and strArray[0]==configs.mark and strArray[1] in classmateCheck:
+    if len(strArray)>1 and configs.mark in strArray[0] and strArray[1] in classmateCheck:
         classmateCheck.remove(strArray[1])
 #显示结果
 listClassmateCheck=list(classmateCheck)
